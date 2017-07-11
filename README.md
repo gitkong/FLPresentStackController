@@ -9,17 +9,17 @@
 
 ```
 self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
-    ViewController *vc = [[ViewController alloc] init];
-    FLPresentStackController *statckController = [[FLPresentStackController alloc] initWithRootViewController:vc];
-    self.window.rootViewController = statckController;
-    [self.window makeKeyAndVisible];
+ViewController *vc = [[ViewController alloc] init];
+FLPresentStackController *statckController = [[FLPresentStackController alloc] initWithRootViewController:vc];
+self.window.rootViewController = statckController;
+[self.window makeKeyAndVisible];
 ```
 
 - Present控制器
 
 ```
 ViewControllerA *vcA = [[ViewControllerA alloc] init];
-    [self.presentStackController presentViewController:vcA animated:YES completion:nil];
+[self.presentStackController presentViewController:vcA animated:YES completion:nil];
 ```
 
 - Dismiss控制器
