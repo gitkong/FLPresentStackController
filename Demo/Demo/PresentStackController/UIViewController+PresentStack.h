@@ -7,14 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "HYPresentStackController.h"
+#import "FLPresentStackController.h"
 
 @interface UIViewController (PresentStack)
 
 /**
  类似UINavigationController，用作present和dismiss
  */
-@property (nonatomic, strong) HYPresentStackController *presentStackController;
+@property (nonatomic, strong) FLPresentStackController *presentStackController;
 
 /**
  用作优化交互，最后present的控制器中的控件需要添加到presentContentView中

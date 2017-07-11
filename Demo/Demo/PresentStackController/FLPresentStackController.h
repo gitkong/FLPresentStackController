@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HYPresentStackController : UIViewController
+@interface FLPresentStackController : UIViewController
 
 @property (nonatomic, strong, readonly) NSArray<UIViewController *> *viewControllers;
 

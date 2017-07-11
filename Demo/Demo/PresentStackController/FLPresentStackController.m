@@ -6,16 +6,16 @@
 //  Copyright © 2017年 YY Inc. All rights reserved.
 //
 
-#import "HYPresentStackController.h"
+#import "FLPresentStackController.h"
 #import "UIViewController+PresentStack.h"
 
-@interface HYPresentStackController ()
+@interface FLPresentStackController ()
 
 @property (nonatomic, strong) NSMutableArray<UIViewController *> *statckControllers;
 
 @end
 
-@implementation HYPresentStackController
+@implementation FLPresentStackController
 
 - (instancetype)initWithRootViewController:(UIViewController *)rootViewController {
     if (self = [super init]) {

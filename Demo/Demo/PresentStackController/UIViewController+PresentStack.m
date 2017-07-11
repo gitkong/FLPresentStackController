@@ -45,11 +45,11 @@ static char *KPresentStackControllerContentViewKey = "KPresentStackControllerCon
     return index;
 }
 
-- (void)setPresentStackController:(HYPresentStackController *)presentStackController {
+- (void)setPresentStackController:(FLPresentStackController *)presentStackController {
     objc_setAssociatedObject(self, &KPresentStackControllerKey, presentStackController, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (HYPresentStackController *)presentStackController {
+- (FLPresentStackController *)presentStackController {
     return objc_getAssociatedObject(self, &KPresentStackControllerKey);
 }
 

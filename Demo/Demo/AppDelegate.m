@@ -20,7 +20,7 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     ViewController *vc = [[ViewController alloc] init];
-    HYPresentStackController *statckController = [[HYPresentStackController alloc] initWithRootViewController:vc];
+    FLPresentStackController *statckController = [[FLPresentStackController alloc] initWithRootViewController:vc];
     self.window.rootViewController = statckController;
     [self.window makeKeyAndVisible];
     return YES;
